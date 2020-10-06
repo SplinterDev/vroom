@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./vroom.js"></script>
+  <title>Vroom</title>
+  <style>
+    div {
+      padding: 10px;
+    }
+    .green { background-color: green; }
+    .blue { background-color: lightblue; }
+    .silver { background-color: silver; }
+    .red { background-color: red; }
+    .orange { background-color: orange; }
+    .gold { background-color: gold; }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+
+  <template id="template-green"><div class="green">Without props</div></template>
+  <template id="template-blue"><div class="blue">With props. This is a prop -> {:text:}</div></template>
+  <template id="template-silver"><div class="silver">With element as prop. This is a prop -> {:$text:}</div></template>
+  <template id="template-red"><div class="red">Array of strings</div></template>
+  <template id="template-orange"><div class="orange">Without props</div></template>
+  <template id="template-gold"><div class="gold">Without props</div></template>
+</body>
+</html>
